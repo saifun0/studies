@@ -1,0 +1,57 @@
+# === Учебные материалы, документы и временные папки ===
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.odt
+*.ods
+guides/
+.bin/
+placeholders/
+sem3/2. introduction-to-IT/*
+!sem3/2. introduction-to-IT/README.md
+sem3/3. operating_systems/*
+!sem3/3. operating_systems/README.md
+
+# === Архивы ===
+*.zip
+*.rar
+*.7z
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# === Базы данных и окружение ===
+*.sqlite3
+*.sqlite3-journal
+*.db
+.env
+.env.*
+!.env.example
+
+# === IDE и редакторы ===
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === Временные файлы Office и ОС ===
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
