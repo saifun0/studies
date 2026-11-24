@@ -6,10 +6,11 @@
 
 using namespace std;
 
+// Класс "Часть": комната существует только внутри дома
 class Room {
 private:
-    string name;
-    double area;
+    string name;  // название комнаты
+    double area;  // площадь комнаты
 
 public:
     Room(const string& n, double a) : name(n), area(a) {
@@ -25,10 +26,11 @@ public:
     }
 };
 
+// Класс "Целое": дом владеет комнатами (композиция)
 class House {
 private:
     string address;
-    vector<unique_ptr<Room>> rooms;
+    vector<unique_ptr<Room>> rooms; // unique_ptr автоматически удалит комнаты вместе с домом
 
 public:
     House(const string& n) : address(n) {
@@ -39,6 +41,7 @@ public:
         cout << "Дом " << address << " удален." << endl;
     }
 
+    // Комната создается прямо внутри дома
     void addRoom(const string& roomName, double roomArea) {
         rooms.push_back(make_unique<Room>(roomName, roomArea));
     }
@@ -52,8 +55,9 @@ public:
 };
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8); // включаем UTF-8 в консоли Windows
 
+    // Ограничиваем время жизни дома блоком, чтобы увидеть удаление комнат до конца main
     {
         House zeleniy("Зеленый");
         zeleniy.addRoom("Спальня", 15.1);
