@@ -4,6 +4,7 @@
 
 ## Лабораторные работы
 
-Локально созданы папки `lab1` и `lab2`, решения пока не загружены. Методички (работы 1-16) лежат локально в `guides/`.
+Методички (работы 1-16) лежат локально в `guides/`.
 
 - [1 Лаба](/sem3/1.%20algorithms-and-data-structures/lab1/README.md)
+- [2 Лаба](/sem3/1.%20algorithms-and-data-structures/lab2/README.md)
