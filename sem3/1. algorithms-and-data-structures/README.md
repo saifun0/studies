@@ -8,3 +8,6 @@
 
 - [1 Лаба](/sem3/1.%20algorithms-and-data-structures/lab1/README.md)
 - [2 Лаба](/sem3/1.%20algorithms-and-data-structures/lab2/README.md)
+- [3 Лаба](/sem3/1.%20algorithms-and-data-structures/lab3/README.md)
+- [4 Лаба](/sem3/1.%20algorithms-and-data-structures/lab4/README.md)
+- [5 Лаба](/sem3/1.%20algorithms-and-data-structures/lab5/README.md)
